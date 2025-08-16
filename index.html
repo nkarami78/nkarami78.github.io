@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #0070ba;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img, .card iframe {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .donate {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .donate a button {
+      padding: 12px 24px;
+      background: #0070ba;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#code">Code</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="gallery">
+      <h2>📸 Project Gallery</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Project photo">
+          <p>Project 1: My custom PCB design</p>
+        </div>
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          <p>Project 2: Demo video</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="code">
+      <h2>💻 My Code</h2>
+      <ul>
+        <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1 Repo</a></li>
+        <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2 Repo</a></li>
+      </ul>
+    </section>
+
+    <section id="donate" class="donate">
+      <h2>☕ Support My Work</h2>
+      <a href="https://paypal.me/yourusername" target="_blank">
+        <button>Donate via PayPal</button>
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 My Projects | Built with GitHub Pages</p>
+  </footer>
+</body>
+</html>
